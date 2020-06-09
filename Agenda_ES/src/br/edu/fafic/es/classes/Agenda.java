@@ -26,8 +26,8 @@ public class Agenda {
         System.out.println("------------Agenda-----------");    
         for(int i=0;i<agenda.size();i++){
             Pessoa pessoa = agenda.get(i);
-            System.out.println(" Nome: "+pessoa.getNome()+"-------------"
-                            +" Telefone: "+pessoa.getTelefone());
+            System.out.println("ID: "+i+" - "+"Nome: "+pessoa.getNome()+" ---- "
+                            +"Telefone: "+pessoa.getTelefone());
         }
         
         System.out.println("Qual o contato a ser excluido: ");     
@@ -38,8 +38,9 @@ public class Agenda {
         System.out.println("------------Agenda-----------");    
         for(int i=0;i<agenda.size();i++){
             Pessoa pessoa = agenda.get(i);
-            System.out.println(" Nome: "+pessoa.getNome()+"-------------"
-                            +" Telefone: "+pessoa.getTelefone());
+
+            System.out.println("ID: "+i+" - "+"Nome: "+pessoa.getNome()+" ---- "
+                            +"Telefone: "+pessoa.getTelefone());
         }
     }
     
