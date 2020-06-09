@@ -26,7 +26,7 @@ public class Agenda {
         System.out.println("------------Agenda-----------");    
         for(int i=0;i<agenda.size();i++){
             Pessoa pessoa = agenda.get(i);
-            System.out.println(i+" Nome: "+pessoa.getNome()+"-------------"
+            System.out.println(" Nome: "+pessoa.getNome()+"-------------"
                             +" Telefone: "+pessoa.getTelefone());
         }
         
@@ -38,7 +38,7 @@ public class Agenda {
         System.out.println("------------Agenda-----------");    
         for(int i=0;i<agenda.size();i++){
             Pessoa pessoa = agenda.get(i);
-            System.out.println(i+" Nome: "+pessoa.getNome()+"-------------"
+            System.out.println(" Nome: "+pessoa.getNome()+"-------------"
                             +" Telefone: "+pessoa.getTelefone());
         }
     }
