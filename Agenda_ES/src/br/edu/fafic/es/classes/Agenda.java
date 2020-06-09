@@ -6,6 +6,10 @@
 package br.edu.fafic.es.classes;
 
 import java.util.ArrayList;
+
+import java.util.List;
+
+
 import java.util.Scanner;
 
 /**
@@ -39,4 +43,26 @@ public class Agenda {
         }
     }
     
+    public void inserir(Pessoa pessoa){
+        agenda.add(pessoa);
+    }
+    
+    public void alterar(int index, Pessoa pessoa){
+        for(int i = 0; i < agenda.size(); i++){
+            if(i == index){
+                agenda.get(i).setNome(pessoa.nome);
+                agenda.get(i).setTelefone(pessoa.telefone);
+            }
+        }
+    }
+    
+    public void buscar(String nome){
+        for(int i = 0; i < agenda.size(); i++){
+            if(agenda.get(i).getNome().equalsIgnoreCase(nome)){
+                System.out.println("Nome: " + agenda.get(i).getNome());
+                System.out.println("Telefone" + agenda.get(i).getTelefone());
+            }
+        }
+    }
+
 }
